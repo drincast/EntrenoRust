@@ -8,13 +8,15 @@ enum Enumeration {
     B,
 }
 
-// Declare Car struct to describe vehicle with four named fields
-// struct Car {
-//     color: String,
-//     transmission: Transmission,
-//     convertible: bool,
-//     mileage: u32,
-// }
+// struct
+#[derive(Debug)]
+struct Person {
+    age: u8,
+    email: String,
+    first_name: String,
+    last_name: String,
+    phone_number: u32,
+}
 
 fn main(){
     let varible01 = 1;
@@ -50,5 +52,19 @@ fn main(){
 
     println!("enum_01 = {:#?}, enum_02 = {:#?}, enum_03 = {:#?}, enum_04 = {:#?}"
         , enum_01, enum_02, enum_03, enum_04);
+    println!("-------------------------------------------------------------------\n");
+
+    println!("ESTRUCTURA");
+    let person_a = Person {
+        first_name: "Ana Maria".to_string(),
+        last_name: String::from("Melendez"),
+        age: 28,
+        phone_number: 555111,
+        email: "anamariamelendez@email.com".to_string(),
+    };
+    println!("nombre: {} y apellido {}", person_a.first_name, person_a.last_name);
+    println!("edad: {}, telefono {}, email: {}", person_a.age, person_a.phone_number, person_a.email);
+    println!("Persona A: {:?}", person_a);
+
     println!("-------------------------------------------------------------------\n");
 }
