@@ -64,7 +64,7 @@ fn main(){
     };
     println!("nombre: {} y apellido {}", person_a.first_name, person_a.last_name);
     println!("edad: {}, telefono {}, email: {}", person_a.age, person_a.phone_number, person_a.email);
-    println!("Persona A: {:?}", person_a);
+    println!("Persona A: {:?}..", person_a);
 
     println!("-------------------------------------------------------------------\n");
 }
