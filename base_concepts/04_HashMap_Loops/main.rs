@@ -1,6 +1,8 @@
+//se debe llamar la definicion de HasMap
 use std::collections::HashMap;
 
 fn main(){
+    //definicion de HasMap
     let mut hash_map: HashMap<String, String> = HashMap::new();
 
     hash_map.insert("key1".to_string(), "value1".to_string());
