@@ -49,4 +49,14 @@ fn main(){
 
     println!("--------------------------------------------------------------\n");
     println!("FOR");
+
+    for item in &hash_map {
+        println!("{:?}", item);
+    }
+
+    println!("\n");
+
+    for (key, value) in &hash_map {
+        println!("{key}: \"{value}\"");
+    }
 }
